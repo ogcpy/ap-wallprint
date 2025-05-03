@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 import logoIconPath from "@assets/logo-02.png";
+import heroVideo from "@assets/heroVideo.mp4"
 
 export default function Hero() {
   const [videoUrl, setVideoUrl] = useState<string | null>(null);
@@ -13,6 +14,7 @@ export default function Hero() {
   useEffect(() => {
     // This would be replaced with the actual video URL when provided
     // setVideoUrl("your-video-url-here.mp4");
+    setVideoUrl(heroVideo);
   }, []);
 
   return (
